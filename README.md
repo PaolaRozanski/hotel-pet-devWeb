@@ -1,7 +1,5 @@
 # ESTUDO ASSÍNCRONO
 
-## Parte 1 — Pesquisa
-
 ### 1. O que é uma função assíncrona? Por que buscar dados de uma API é uma operação assíncrona?
 
 É uma função que consegue esperar uma tarefa terminar sem parar o resto da página. Buscar dados de uma API é assíncrono porque precisa esperar o servidor responder.
