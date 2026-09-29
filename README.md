@@ -23,5 +23,4 @@ A Fetch API serve para buscar informações de uma API. O `fetch(url)` faz a bus
 ### 5. Como podemos tratar um erro?
 
 Podemos usar `try...catch` para pegar os erros. Também podemos verificar o `resposta.ok` para saber se a resposta da API deu certo.
-## Parte 2 — Prática
 
