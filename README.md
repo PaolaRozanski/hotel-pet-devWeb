@@ -1,133 +1,29 @@
-# Nome do projeto
+# ESTUDO ASSÍNCRONO
 
-> Substitua este título e esta descrição pelas informações do seu projeto.
+## Parte 1 — Pesquisa
 
-Descreva brevemente o objetivo da aplicação, o problema que ela resolve e o
-público ao qual se destina.
+### 1. O que é uma função assíncrona? Por que buscar dados de uma API é uma operação assíncrona?
 
-## Tecnologias
+É uma função que consegue esperar uma tarefa terminar sem parar o resto da página. Buscar dados de uma API é assíncrono porque precisa esperar o servidor responder.
 
-- Vue.js 3;
-- Vite;
-- Vue Router;
-- Bootstrap 5;
-- Bootstrap Icons;
-- Axios.
+### 2. O que é uma Promise? O que significam `pending`, `fulfilled` e `rejected`?
 
-## Pré-requisitos
+Promise é algo que representa uma tarefa que ainda está acontecendo ou que vai ter um resultado.
 
-Antes de iniciar, verifique se estão instalados:
+- **pending:** está esperando.
+- **fulfilled:** deu certo.
+- **rejected:** deu errado.
 
-- [Node.js](https://nodejs.org/);
-- npm;
-- [Git](https://git-scm.com/);
-- [Visual Studio Code](https://code.visualstudio.com/), recomendado.
+### 3. Para que servem `async` e `await`? O que acontece enquanto espera?
 
-O projeto utiliza o Node.js `22.18.0`, definido no arquivo `.nvmrc`.
+O `async` mostra que a função é assíncrona e o `await` faz ela esperar uma resposta antes de continuar. Enquanto isso, o resto da página continua funcionando.
 
-```bash
-node --version
-npm --version
-git --version
-```
+### 4. O que a Fetch API faz? Qual a diferença entre `fetch(url)` e `resposta.json()`?
 
-Caso utilize NVM no Linux ou macOS:
+A Fetch API serve para buscar informações de uma API. O `fetch(url)` faz a busca e o `resposta.json()` pega os dados recebidos e transforma para podermos usar no JavaScript.
 
-```bash
-nvm install
-nvm use
-```
+### 5. Como podemos tratar um erro?
 
-No Windows com `nvm-windows`:
+Podemos usar `try...catch` para pegar os erros. Também podemos verificar o `resposta.ok` para saber se a resposta da API deu certo.
+## Parte 2 — Prática
 
-```powershell
-nvm install 22.18.0
-nvm use 22.18.0
-```
-
-## Instalação
-
-Clone o repositório:
-
-```bash
-git clone URL-DO-REPOSITORIO
-```
-
-Acesse o diretório e instale as dependências:
-
-```bash
-cd nome-do-projeto
-npm install
-```
-
-## Execução
-
-Inicie o servidor de desenvolvimento:
-
-```bash
-npm run dev
-```
-
-O terminal apresentará o endereço local da aplicação, normalmente:
-
-```text
-http://localhost:5173
-```
-
-Outros comandos disponíveis:
-
-```bash
-npm run format
-npm run lint
-npm run build
-npm run preview
-```
-
-## Estrutura do projeto
-
-A aplicação organiza páginas, componentes, serviços, rotas e estilos por
-responsabilidade.
-
-Consulte o [guia de estrutura do projeto](./docs/estrutura-projeto.md).
-
-## Documentação
-
-- [Como utilizar o template](./docs/como-utilizar-template.md);
-- [Estrutura do projeto](./docs/estrutura-projeto.md);
-- [Guia de padronização do código](./docs/guia-padronizacao-codigo.md);
-- [Validação do projeto](./docs/validacao-template.md).
-
-## Contribuição
-
-Para contribuir:
-
-1. faça um fork, caso não possua acesso direto ao repositório;
-2. clone o repositório ou seu fork;
-3. crie uma branch para a alteração;
-4. desenvolva e teste a funcionalidade;
-5. execute a formatação, o lint e o build;
-6. crie um commit com uma mensagem descritiva;
-7. envie a branch ao GitHub;
-8. abra um Pull Request.
-
-```bash
-git switch -c feat/nome-da-funcionalidade
-npm run format
-npm run lint
-npm run build
-git add .
-git commit -m "feat: adiciona nova funcionalidade"
-git push origin feat/nome-da-funcionalidade
-```
-
-## Origem do template
-
-Este projeto foi iniciado a partir do
-[Template Vue.js com Bootstrap](https://github.com/ifc-dev-web2/tec-vue-bootstrap-template),
-desenvolvido pelo
-[Prof. Cristofer Sousa](https://github.com/cristofersousa) para atividades de
-Desenvolvimento Web do Instituto Federal Catarinense — Campus Araquari.
-
-## Licença
-
-Consulte os termos de utilização no arquivo [LICENSE](LICENSE).
